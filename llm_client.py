@@ -1,16 +1,4 @@
-"""
-LLM client for the agent's "reasoning" / explanation step.
 
-Uses a local Ollama server (http://localhost:11434) when available — no
-paid API keys required. If Ollama isn't running or the model isn't pulled,
-the agent falls back to a clear, template-based explanation so the
-pipeline never breaks a demo.
-
-To use Ollama:
-    1. Install from https://ollama.com
-    2. `ollama pull llama3.1` (or any model you prefer)
-    3. Set OLLAMA_MODEL env var if you use a different model name
-"""
 import os
 import requests
 
