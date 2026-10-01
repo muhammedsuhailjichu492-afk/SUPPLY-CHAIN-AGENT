@@ -1,12 +1,4 @@
-"""
-LSTM demand forecasting (deep-learning alternative to the XGBoost model).
 
-This module is optional: if PyTorch is not installed, `is_available()`
-returns False and the orchestrator/API transparently falls back to the
-XGBoost model. This keeps the project runnable on lightweight machines
-while still demonstrating an LSTM forecasting component for the
-portfolio/demo.
-"""
 import os
 import numpy as np
 import pandas as pd
