@@ -1,12 +1,4 @@
-"""
-XGBoost demand forecasting.
 
-Approach: supervised regression on engineered time-series features
-(lags, rolling means, day-of-week, day-of-year) rather than a plain
-autoregressive walk — this is the standard, reliable way to get XGBoost
-to forecast a time series, and it degrades gracefully for
-new/low-history products.
-"""
 import os
 import joblib
 import numpy as np
