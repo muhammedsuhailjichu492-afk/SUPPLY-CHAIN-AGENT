@@ -1,14 +1,4 @@
-"""
-Agentic orchestrator — the "brain" that chains every module together into
-one autonomous decision, matching the pipeline in the project spec:
 
-    Forecasting -> Inventory Analysis -> Supplier RAG -> Risk Prediction
-        -> Procurement Recommendation -> Approval
-
-Each stage's output feeds the next. The final recommendation is persisted
-to the database with status="pending" and requires a human approval call
-(agentic-but-supervised, appropriate for real procurement decisions).
-"""
 import numpy as np
 import pandas as pd
 from sqlalchemy.orm import Session
