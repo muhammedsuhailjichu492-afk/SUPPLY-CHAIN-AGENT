@@ -1,14 +1,4 @@
-"""
-Inventory analysis.
 
-Turns (current stock + forecasted demand + supplier lead time) into:
-    - days of cover remaining
-    - stockout risk flag
-    - a statistically-grounded reorder quantity recommendation
-      (reorder point + safety stock model, using demand variability
-      and lead-time to size the safety buffer — the standard formula
-      used in real inventory systems)
-"""
 import math
 from dataclasses import dataclass
 
