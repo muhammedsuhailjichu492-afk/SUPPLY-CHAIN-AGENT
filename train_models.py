@@ -1,10 +1,4 @@
-"""
-One-shot setup script: generates synthetic data and pretrains every model
-so the dashboard is instantly responsive on first use.
 
-Usage:
-    python train_models.py
-"""
 from backend.database import SessionLocal
 from backend import data_generator, models
 from backend.forecasting import xgboost_model, lstm_model
