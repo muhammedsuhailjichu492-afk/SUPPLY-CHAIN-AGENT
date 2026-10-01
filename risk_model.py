@@ -1,12 +1,4 @@
-"""
-Supplier risk prediction.
 
-Trains a RandomForestClassifier on supplier performance features
-(historical on-time rate, defect rate, financial stability, lead-time
-variability, region) to classify each supplier's procurement risk as
-low / medium / high, and reports the top contributing factors for
-explainability — this is what feeds the agent's reasoning text.
-"""
 import os
 import json
 import joblib
